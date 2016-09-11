@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Fira Code;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+html, body, #root, #app {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+}
+
+#root {
+    padding: 20px;
+}

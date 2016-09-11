@@ -1,0 +1,73 @@
+
+
+#app {
+    background-color: rgba(0, 0, 0, 0.04);;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;;
+    align-items: center;
+}
+
+/**
+ * Input
+ */
+input {
+    background: none;
+    border: none;
+    border-bottom: 1px solid lightgrey;
+    max-width: 300px;
+    width: 300px;
+    padding: 10px 20px;
+    outline: none;
+    font-family: Fira Code;
+    font-size: 32px;
+    text-align: right;
+    color: rgb(106, 204, 246);
+    text-shadow: 0px 0px 0px #000;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.8;
+}
+
+input::-webkit-input-placeholder {
+    text-shadow: none;
+    -webkit-text-fill-color: initial;
+}
+
+#result {
+  height: 30px;
+  line-height: 30px;
+  text-align: right;
+  padding: 0 20px;
+  opacity: 0.3;
+}
+
+#history {
+  list-style: none;
+  font-family: Fira Code;
+  height: 40%;
+  width: 300px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: scroll;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#history li {
+  text-align: right;
+  border-bottom: 1px solid #eee;
+  margin-top: 5px;
+}
+
+#history li .expression {
+  margin: 3px 0;
+}
+
+#history li .result {
+  margin: 0;
+  opacity: 0.3;
+}
