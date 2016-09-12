@@ -6,7 +6,7 @@ export default function Results (props)
     <ul id="history">
       {
         props.history.map((item, i) =>
-          <li key={i}>
+          <li key={i} onClick={_ => props.handleItemClick(item)}>
             <p className="expression">{item.expression}</p>
             <p className="result">{item.result}</p>
           </li>)

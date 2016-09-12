@@ -8,6 +8,7 @@ export default function Input (props)
         value={props.expression}
         autoComplete="off"
         autoFocus={true}
+        onBlur={(e) => e.target.focus()}
         onChange={(e) => props.handleChange(e.target.value)}
      />
   )

@@ -46,11 +46,20 @@ class App extends Component
     }
   }
 
+  insertHistoryResult (item)
+  {
+    console.log(this.state.expression + item.result)
+    this.setState({expression: this.state.expression + item.result})
+  }
+
   render()
   {
     return (
       <div id="app">
-        <History history={this.state.history}/>
+        <History
+          history={this.state.history}
+          handleItemClick={this.insertHistoryResult.bind(this)}
+        />
         <form onSubmit={this.exec.bind(this)}>
           <Input
             expression={this.state.expression}
